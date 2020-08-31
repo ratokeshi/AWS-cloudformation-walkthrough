@@ -1,0 +1,6 @@
+---
+Resources:
+  CFTVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.255.0.0/16

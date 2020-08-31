@@ -1,0 +1,19 @@
+---
+# The hash is the comment identifier. this line is a comment.
+# This is also a comment but the next lines is to identify the Resources section.  Resources hold all of the objects to be created.
+Resources:
+  # an empty Resources section will cause an error.  So we must put a resource in this section. This is just an identifier.
+  CFTVPC:
+    # The object inside of the resources section must hve data as well.  This identifies what object we are creating.  This is a VPC
+    Type: AWS::EC2::VPC
+    # Next we will have to identify the subnet of the VPC.  This is the only required data.  But it is a Property so...
+    Properties:
+      # We are identiying this next line as a property of the object above.
+      CidrBlock: 10.255.0.0/16
+      #There we go only 6 lines of data.
+      # - The first line is 3 dashes.  THis indicates the beginning of the YAML document
+      # - Line 4, the second non-comment line signals the fiorst main section or Resources that will be built by cloudformation
+      # - Line 6, the third non-comment line is the id of the first resource in this section
+      # - Line 8, the fourth non-comment line is the CloudFormation resource type.  In this case a VPC object.
+      # - Line 10, the fifth non-comment object is the Properties section of the first resource object.
+      # - Line 12, the sixth non-comment line is the actual required data for this resource object or the Address block of the VPC.
