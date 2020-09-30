@@ -1,5 +1,5 @@
 # AWS-cloudformation-walkthrough
-Step by step walkthrough deploying, modifying, deleting,, replacing infrastructure.  
+Step by step walkthrough deploying, modifying, deleting, replacing infrastructure.  
 
 First steps is creating an AWS resource with the most default options.  Once in that folder you will move through activities to create more complex CloudFormation Templates.
 
