@@ -1,10 +1,10 @@
 ---
 # The hash is the comment identifier. this line is a comment.
-# This is also a comment but the next lines is to identify the Resources section.  Resources hold all of the objects to be created.
+# This is also a comment but the next line is to identify the Resources section.  Resources hold all of the objects to be created.
 Resources:
   # an empty Resources section will cause an error.  So we must put a resource in this section. This is just an identifier.
   CFTVPC:
-    # The object inside of the resources section must hve data as well.  This identifies what object we are creating.  This is a VPC
+    # The object inside of the resources section must have data as well.  This identifies what object we are creating.  This is a VPC
     Type: AWS::EC2::VPC
     # Next we will have to identify the subnet of the VPC.  This is the only required data.  But it is a Property so...
     Properties:
