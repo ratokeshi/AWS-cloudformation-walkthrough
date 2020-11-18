@@ -8,10 +8,10 @@ Resources:
     Type: AWS::EC2::VPC
     # Next we will have to identify the subnet of the VPC.  This is the only required data.  But it is a Property so...
     Properties:
-      # We are identiying this next line as a property of the object above.
+      # We are identifying this next line as a property of the object above.
       CidrBlock: 10.255.0.0/16
       #There we go only 6 lines of data.
-      # - The first line is 3 dashes.  THis indicates the beginning of the YAML document
+      # - The first line is 3 dashes.  This indicates the beginning of the YAML document
       # - Line 4, the second non-comment line signals the fiorst main section or Resources that will be built by cloudformation
       # - Line 6, the third non-comment line is the id of the first resource in this section
       # - Line 8, the fourth non-comment line is the CloudFormation resource type.  In this case a VPC object.
